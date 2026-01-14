@@ -27,6 +27,4 @@ public class Termin {
         this.arztId = arztId;
     }
 
-    // Hier drunter: Getter und Setter erstellen (Alt + Einfügen in IntelliJ)
-    // ...
 }
