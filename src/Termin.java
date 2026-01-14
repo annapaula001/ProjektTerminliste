@@ -1,10 +1,5 @@
-public class Termin {
-}
-package model;
-
 import java.sql.Date;
 import java.sql.Time;
-
 public class Termin {
     private int idTermin;
     private Date datum;
@@ -13,8 +8,8 @@ public class Termin {
     private String status;
 
     // Die Verknüpfungen zu den anderen Tabellen
-    private int patientId;  //(FK)
-    private int arztId;    //(FK)
+    private int idPatient;  //(FK)
+    private int idArzt;    //(FK)
 
     // Konstruktor
     public Termin(int idTermin, Date datum, Time uhrzeit, String grund, String status, int patientId, int arztId) {
@@ -23,8 +18,26 @@ public class Termin {
         this.uhrzeit = uhrzeit;
         this.grund = grund;
         this.status = status;
-        this.patientId = patientId;
-        this.arztId = arztId;
+        this.idPatient = idPatient;
+        this.idArzt = idArzt;
     }
 
+     public int getIdTermin() {
+        return idTermin;
+             }
+public void setIdTermin(int idTermin) {
+        this.idTermin = idTermin;
+}
+public Date getDatum() {}
+public void setDatum(Date datum) {}
+public Time getUhrzeit() {return uhrzeit;}
+public void setUhrzeit(Time uhrzeit) {}
+public String getGrund() {return grund;}
+public void setGrund(String grund) {}
+public String getStatus() {return status;}
+public void setStatus(String status) {}
+public int getIdPatient() {return idPatient;}
+public void setIdPatient(int idPatient) {}
+public int getIdArzt() {return idArzt;}
+public void setIdArzt(int idArzt) {}
 }
