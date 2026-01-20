@@ -11,18 +11,18 @@ public class Termin {
     private String status;
 
     // Verweise auf die anderen Tabellen (Foreign Keys)
-    private int patientId; // Speichert die idPatient
-    private int arztId;    // Speichert die idArzt
+    private int idPatient; // Speichert die idPatient
+    private int idArzt;    // Speichert die idArzt
 
     // Konstruktor
-    public Termin(int idTermin, Date datum, Time uhrzeit, String grund, String status, int patientId, int arztId) {
+    public Termin(int idTermin, Date datum, Time uhrzeit, String grund, String status, int idPatient, int idArzt) {
         this.idTermin = idTermin;
         this.datum = datum;
         this.uhrzeit = uhrzeit;
         this.grund = grund;
         this.status = status;
-        this.patientId = patientId;
-        this.arztId = arztId;
+        this.idPatient = idPatient;
+        this.idArzt = idArzt;
     }
 
     // Getter und Setter
@@ -41,11 +41,11 @@ public class Termin {
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 
-    public int getPatientId() { return patientId; }
-    public void setPatientId(int patientId) { this.patientId = patientId; }
+    public int getidPatient() { return idPatient; }
+    public void setidPatient(int idPatient) { this.idPatient = idPatient; }
 
-    public int getArztId() { return arztId; }
-    public void setArztId(int arztId) { this.arztId = arztId; }
+    public int getidArzt() { return idArzt; }
+    public void setidArzt(int arztId) { this.idArzt = idArzt; }
 
     @Override
     public String toString() {

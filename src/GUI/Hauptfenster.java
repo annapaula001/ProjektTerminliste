@@ -8,7 +8,7 @@ public class Hauptfenster extends JFrame {
 
     public Hauptfenster() {
         // Grundeinstellungen des Fensters
-        setTitle("Terminmanagement System");
+        setTitle("Terminliste");
         setSize(900, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Zentriert das Fenster auf dem Bildschirm
