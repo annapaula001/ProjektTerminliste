@@ -1,4 +1,4 @@
-package datenbank;
+package Datenbank;
 
 public class TerminDAO {
 }

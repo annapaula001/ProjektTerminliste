@@ -1,6 +1,4 @@
-package datenbank;
+package Datenbank;
 
 public class DBConnection {
-
-
 }
